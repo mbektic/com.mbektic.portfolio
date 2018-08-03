@@ -175,11 +175,6 @@ a, a:link, a:visited, a:active, a:focus {
 	position: relative;
 }
 
-.grid .element-item .titles {
-	background: transparent url("/images/cardShapes/shape1.svg") no-repeat 50% 50%/190px auto;
-}
-
-
 .grid .element-item h2 {
 	width: 100%;
 	display: block;
@@ -200,9 +195,27 @@ a, a:link, a:visited, a:active, a:focus {
 	margin-right: auto;
 }
 
-html:not(.touch) .grid .element-item a:hover .titles {
+html:not(.touch) .grid .element-item a:hover{
 	-webkit-transition: -webkit-transform 150ms ease-out;
 	transition: transform 150ms ease-out;
-	-webkit-transform: perspective(250px) rotateX(90deg) rotateY(0deg);
-	transform: perspective(250px) rotateX(90deg) rotateY(0deg);
+}
+
+html:not(.touch) .grid .element-item a:hover .titles.animation1 {
+	-webkit-transform: perspective(350px) rotateX(90deg) rotateY(0deg);
+	transform: perspective(350px) rotateX(90deg) rotateY(0deg);
+}
+
+html:not(.touch) .grid .element-item a:hover .titles.animation2 {
+	-webkit-transform: perspective(150px) rotateX(0deg) rotateY(90deg);
+	transform: perspective(150px) rotateX(0deg) rotateY(90deg);
+}
+
+html:not(.touch) .grid .element-item a:hover .titles.animation3 {
+	-webkit-transform: perspective(150px) rotateX(0deg) rotateY(-90deg);
+	transform: perspective(150px) rotateX(0deg) rotateY(-90deg);
+}
+
+html:not(.touch) .grid .element-item a:hover .titles.animation4 {
+	-webkit-transform: perspective(350px) rotateX(-90deg) rotateY(0deg);
+	transform: perspective(350px) rotateX(-90deg) rotateY(0deg);
 }
