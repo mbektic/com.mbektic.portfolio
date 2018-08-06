@@ -39,7 +39,10 @@ nav div {
 	flex-direction: column;
 }
 
-#navLinks a { color: #a7a9ac; }
+#navLinks a {
+	color: #a7a9ac;
+	display: table;
+}
 
 #navLinks a:hover {
 	color: #333;
