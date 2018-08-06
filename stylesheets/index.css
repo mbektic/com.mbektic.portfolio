@@ -82,18 +82,8 @@ nav div {
 ************************************* Cards
 */
 .element-item {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-}
-
-.element-item {
 	width: 200px;
 	height: 291px;
-	margin: 0 30px 30px 0;
-}
-
-.element-item {
 	position: relative;
 	float: left;
 	height: auto;
@@ -102,7 +92,7 @@ nav div {
 	-webkit-border-radius: 7px;
 	overflow: hidden;
 	display: inline-block;
-	margin: 10px 0 0 25px;
+	margin: 0 0 10px 25px
 }
 
 .element-item * {
@@ -208,7 +198,24 @@ html:not(.touch) .element-item a:hover .titles.animation3 {
 	transform: perspective(150px) rotateX(0deg) rotateY(-90deg);
 }
 
-html:not(.touch) .grid .element-item a:hover .titles.animation4 {
+html:not(.touch) .element-item a:hover .titles.animation4 {
 	-webkit-transform: perspective(350px) rotateX(-90deg) rotateY(0deg);
 	transform: perspective(350px) rotateX(-90deg) rotateY(0deg);
+}
+
+@media (max-width: 767.98px) {
+	#logoImg { background-position: left; }
+
+	.element-item{
+		width: 40%;
+	}
+
+  #navLinks a {
+		display: block;
+		margin-right: 5%;
+	}
+
+	#navLinks {
+		text-align: right;
+	}
 }

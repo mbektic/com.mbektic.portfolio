@@ -15,7 +15,8 @@
 
 
 var randomNumber1; // The number for deciding the background shape
-var randomNumber2; // The number for deciding the animation selcetion
+var randomNumber2; // The number for deciding the animation selection
+var quot = "'"; // Fixes the issue of IE11 not liking grave accents
 
 // [imageName/pageURL, imgAltTag, cardTitle, cardSubTitle]
 var contentArray = [
@@ -56,8 +57,6 @@ function generateCards(){
 	for(i = 0; i < contentArray.length; i++){
 		randomNumber1 = Math.floor(Math.random() * 4) + 1;
 		randomNumber2 = Math.floor(Math.random() * 4) + 1;
-
-		quot = "'"
 
 		currentString = '<div class="element-item"><img src="images/cardBackgrounds/' + contentArray[i][0] + '.png" alt="' + contentArray[i][1] + '" /><a href="/pages/' + contentArray[i][0] + '.html">'
 		+ '<div class="titles animation' + randomNumber1 + '" style=' + quot +'background: url("/images/cardShapes/shape' + randomNumber2 + '.svg") no-repeat 50% 50%/190px auto;' + quot + '><span>'

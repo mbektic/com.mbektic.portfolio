@@ -19,18 +19,19 @@
 <body>
 	<!-- ---------------------- <nav> ---------------------- -->
 	<nav class="row">
+		<div class="col-1 d-md-none"></div>
 		<!-- ---------------------- logoImg ---------------------- -->
-		<div id="logoImg" class="col-md-2">
+		<div id="logoImg" class="col-md-2 col-5">
 		</div> <!-- /logoImgWrapper -->
 
-		<div class="col-md-2">
+		<div class="col-md-2 d-md-block d-none">
 			Simply Ambitious<br />
 			Dangerously Creative<br />
 			And Rationally Open-minded
 		</div>
 
 		<!-- ---------------------- navLinks ---------------------- -->
-		<div id="navLinks" class="col-md-3">
+		<div id="navLinks" class="col-md-3 col-6">
 			<a href="">About</a>
 			<a href="">Contact</a>
 			<a href="">Something else</a>
@@ -57,9 +58,9 @@
 	<script src="javascript/cardGenerator.js"></script>
 
 	<script>
-		$(document).ready(function() {
-			generateCards();
-		});
+	$(document).ready(function() {
+		generateCards();
+	});
 	</script>
 </body>
 </html>
