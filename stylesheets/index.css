@@ -23,7 +23,7 @@ a, a:link, a:visited, a:active, a:focus {
 ************************************* Nav
 */
 nav {
-	margin: 1% 0 3%;
+	margin: 1% 0 2%;
 }
 
 nav div {
@@ -76,7 +76,7 @@ nav div {
 }
 
 #mainContentWrap {
-	margin-left: 8%;
+	margin: 0 5%;
 }
 
 /*
@@ -86,7 +86,6 @@ nav div {
 	opacity: 1;
 	position: relative;
 	justify-content: center;
-	margin-right: 15px;
 }
 
 .projectCard {
