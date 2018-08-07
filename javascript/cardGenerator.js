@@ -2,7 +2,7 @@
 /////////////////////////////////////////////////////
 // Card Structure
 
-// <div class="element-item">
+// <div class="projectCard">
 // 	<img src="images/cardBackgrounds/arrayValue1.png" alt="arrayValue2">
 //
 // 	<a href="/pages/arrayValue1.html">
@@ -58,11 +58,13 @@ function generateCards(){
 		randomNumber1 = Math.floor(Math.random() * 4) + 1;
 		randomNumber2 = Math.floor(Math.random() * 4) + 1;
 
-		currentString = '<div class="element-item"><img src="images/cardBackgrounds/' + contentArray[i][0] + '.png" alt="' + contentArray[i][1] + '" /><a href="/pages/' + contentArray[i][0] + '.html">'
+		currentString = '<div class="projectCard"><img src="images/cardBackgrounds/' + contentArray[i][0] + '.png" alt="' + contentArray[i][1] + '" /><a href="/pages/' + contentArray[i][0] + '.html">'
 		+ '<div class="titles animation' + randomNumber1 + '" style=' + quot +'background: url("/images/cardShapes/shape' + randomNumber2 + '.svg") no-repeat 50% 50%/190px auto;' + quot + '><span>'
 		+ '<h2>' + contentArray[i][2] + '</h2><h3>' + contentArray[i][3] + '</h3></span></div></a></div>' ;
 		html += currentString;
 	}
 
 	$("#cardHolder").html(html);
+
+	$("html").fadeIn(1000);
 }
