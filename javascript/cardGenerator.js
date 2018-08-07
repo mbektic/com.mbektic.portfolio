@@ -21,30 +21,19 @@ var quot = "'"; // Fixes the issue of IE11 not liking grave accents
 // [imageName/pageURL, imgAltTag, cardTitle, cardSubTitle]
 var contentArray = [
 	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
+	["PIBA", "uofl PIBA homepage", "PIBA", "UofL Department homepage"],
 	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
+	["PIBA", "uofl PIBA homepage", "PIBA", "UofL Department homepage"],
 	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
+	["PIBA", "uofl PIBA homepage", "PIBA", "UofL Department homepage"],
 	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
+	["PIBA", "uofl PIBA homepage", "PIBA", "UofL Department homepage"],
 	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
+	["PIBA", "uofl PIBA homepage", "PIBA", "UofL Department homepage"],
 	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
+	["PIBA", "uofl PIBA homepage", "PIBA", "UofL Department homepage"],
 	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"],
-	["PrintAndMail", "uofl print and main homepage", "Print and Mail", "Canon Partnership Homepage"]
+	["PIBA", "uofl PIBA homepage", "PIBA", "UofL Department homepage"]
 ];
 
 
@@ -59,7 +48,7 @@ function generateCards(){
 		randomNumber2 = Math.floor(Math.random() * 4) + 1;
 
 		currentString = '<div class="projectCard"><img src="images/cardBackgrounds/' + contentArray[i][0] + '.png" alt="' + contentArray[i][1] + '" /><a href="/pages/' + contentArray[i][0] + '.html">'
-		+ '<div class="titles animation' + randomNumber1 + '" style=' + quot +'background: url("/images/cardShapes/shape' + randomNumber2 + '.svg") no-repeat 50% 50%/190px auto;' + quot + '><span>'
+		+ '<div class="titles animation' + randomNumber1 + ' shape' + randomNumber2 + ' " ><span>'
 		+ '<h2>' + contentArray[i][2] + '</h2><h3>' + contentArray[i][3] + '</h3></span></div></a></div>' ;
 		html += currentString;
 	}

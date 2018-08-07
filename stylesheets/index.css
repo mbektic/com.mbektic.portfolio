@@ -7,6 +7,7 @@
 
 html{
 	overflow-x: hidden;
+	display: none;
 }
 
 body{
@@ -81,9 +82,11 @@ nav div {
 /*
 ************************************* Cards
 */
-
-html{
-	display: none;
+#cardHolder{
+	opacity: 1;
+	position: relative;
+	justify-content: center;
+	margin-right: 15px;
 }
 
 .projectCard {
@@ -103,6 +106,7 @@ html{
 	-ms-user-select:none;
 	user-select:none;
 	-o-user-select:none;
+	border: 1px dashed #a7a9ac;
 }
 
 .projectCard * {
@@ -163,11 +167,6 @@ html{
 	bottom: 0;
 }
 
-#cardHolder{
-	opacity: 1;
-	position: relative;
-}
-
 .projectCard h2 {
 	width: 100%;
 	display: block;
@@ -188,6 +187,29 @@ html{
 	margin-right: auto;
 }
 
+
+/*
+************************************* Card Background Shapes
+*/
+.shape1 {
+	background: url("/images/cardShapes/shape1.svg") no-repeat 50% 50%/190px auto;
+}
+
+.shape2 {
+	background: url("/images/cardShapes/shape2.svg") no-repeat 50% 50%/190px auto;
+}
+
+.shape3 {
+	background: url("/images/cardShapes/shape3.svg") no-repeat 50% 50%/190px auto;
+}
+
+.shape4 {
+	background: url("/images/cardShapes/shape4.svg") no-repeat 50% 50%/190px auto;
+}
+
+/*
+************************************* Card Animations
+*/
 html:not(.touch) .projectCard a:hover{
 	-webkit-transition: -webkit-transform 150ms ease-out;
 	transition: transform 150ms ease-out;
@@ -213,6 +235,10 @@ html:not(.touch) .projectCard a:hover .titles.animation4 {
 	transform: perspective(350px) rotateX(-90deg) rotateY(0deg);
 }
 
+
+/*
+************************************* Tablet and smaller
+*/
 @media (max-width: 767.98px) {
 	#logoImg { background-position: left; }
 
@@ -227,5 +253,21 @@ html:not(.touch) .projectCard a:hover .titles.animation4 {
 
 	#navLinks {
 		text-align: right;
+	}
+
+	.shape1 {
+		background: url("/images/cardShapes/shape1.svg") no-repeat 50% 50%/100px auto;
+	}
+
+	.shape2 {
+		background: url("/images/cardShapes/shape2.svg") no-repeat 50% 50%/100px auto;
+	}
+
+	.shape3 {
+		background: url("/images/cardShapes/shape3.svg") no-repeat 50% 50%/100px auto;
+	}
+
+	.shape4 {
+		background: url("/images/cardShapes/shape4.svg") no-repeat 50% 50%/100px auto;
 	}
 }
